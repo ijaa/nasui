@@ -77,7 +77,7 @@
           ixDropGridItem
         >
           <ng-container [ngSwitch]="widget.name | lowercase">
-            <ix-widget-sysinfo
+            <!-- <ix-widget-sysinfo
               *ngSwitchCase="'system information'"
               id="active"
               fxFlex.xs="100"
@@ -105,15 +105,15 @@
               [showReorderHandle]="reorderMode"
             >
               <span ixDragHandle></span>
-            </ix-widget-sysinfo>
+            </ix-widget-sysinfo> -->
 
-            <ix-widget-help
+            <!-- <ix-widget-help
               *ngSwitchCase="'help'"
               ixDrag
               [showReorderHandle]="reorderMode"
             >
               <span ixDragHandle></span>
-            </ix-widget-help>
+            </ix-widget-help> -->
 
             <ix-widget-cpu
               *ngSwitchCase="'cpu'"
