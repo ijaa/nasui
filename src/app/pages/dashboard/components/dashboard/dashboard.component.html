@@ -1,4 +1,4 @@
-<ng-template #pageHeader>
+<!-- <ng-template #pageHeader>
   <ix-page-title-header *ngIf="screenType === ScreenType.Desktop">
     <ng-container *ngIf="isLoaded">
       <button mat-button [color]="'primary'" (click)="showConfigForm()">
@@ -25,7 +25,7 @@
       </button>
     </ng-container>
   </ix-page-title-header>
-</ng-template>
+</ng-template> -->
 
 <div class="widgets-wrapper-container" (window:resize)="onMobileResize($event)">
   <div
@@ -65,7 +65,7 @@
           ixDropGridItem
         >
           <ng-container [ngSwitch]="widget.name | lowercase">
-            <ix-widget-sysinfo
+            <!-- <ix-widget-sysinfo
               *ngSwitchCase="'system information'"
               id="active"
               fxFlex.xs="100"
@@ -93,15 +93,15 @@
               [showReorderHandle]="reorderMode"
             >
               <span ixDragHandle></span>
-            </ix-widget-sysinfo>
+            </ix-widget-sysinfo> -->
 
-            <ix-widget-help
+            <!-- <ix-widget-help
               *ngSwitchCase="'help'"
               ixDrag
               [showReorderHandle]="reorderMode"
             >
               <span ixDragHandle></span>
-            </ix-widget-help>
+            </ix-widget-help> -->
 
             <ix-widget-cpu
               *ngSwitchCase="'cpu'"

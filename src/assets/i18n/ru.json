@@ -4133,7 +4133,6 @@
   "View": "Просмотр",
   "Virtual CPUs": "Виртуальные процессоры",
   "Virtual Machines": "Виртуальные машины",
-  "Virtualization": "Виртуализация",
   "Volume size cannot be zero.": "Размер тома не может быть нулевым.",
   "WARNING": "ВНИМАНИЕ",
   "WARNING: A failover will  temporarily interrupt system services.": "ВНИМАНИЕ: Аварийное переключение временно прерывет системные службы.",

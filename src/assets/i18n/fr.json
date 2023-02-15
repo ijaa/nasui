@@ -4003,7 +4003,6 @@
   "Virtual IP Address (Failover Address)": "Adresse IP virtuelle (adresse failover)",
   "Virtual Machines": "Machines virtuelles",
   "Virtual machines cannot be stored in an unmounted mountpoint: {datastore}": "Les machines virtuelles ne peuvent pas être stockées dans un point de montage non monté : {datastore}",
-  "Virtualization": "Virtualisation",
   "Virtualization is not supported": "La virtualisation n'est pas supportée.",
   "Volume Size": "Taille du volume",
   "Volume size cannot be zero.": "La taille du volume ne peut pas être nulle.",

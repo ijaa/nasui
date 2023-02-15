@@ -4095,7 +4095,6 @@
   "View/Download Key": "Ver/Descargar clave",
   "Virtual CPUs": "CPUs virtuales",
   "Virtual IP Address (Failover Address)": "Dirección IP virtual (dirección de conmutación por error)",
-  "Virtualization": "Virtualización",
   "Volume size cannot be zero.": "El tamaño del volumen no puede ser cero.",
   "WARNING": "ADVERTENCIA",
   "WARNING: A failover will  temporarily interrupt system services.": "ADVERTENCIA: Una conmutación por error interrumpirá temporalmente los servicios del sistema.",

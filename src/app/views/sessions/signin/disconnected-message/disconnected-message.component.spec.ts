@@ -13,14 +13,14 @@ describe('DisconnectedMessageComponent', () => {
     spectator = createComponent();
   });
 
-  it('shows "Connecting to TrueNAS" message', () => {
-    expect(spectator.fixture.nativeElement).toHaveText('Connecting to TrueNAS');
-    expect(spectator.fixture.nativeElement).toHaveText('Make sure the TrueNAS system is powered on and connected to the network.');
+  it('shows "Connecting to OneNAS" message', () => {
+    expect(spectator.fixture.nativeElement).toHaveText('Connecting to OneNAS');
+    expect(spectator.fixture.nativeElement).toHaveText('Make sure the OneNAS system is powered on and connected to the network.');
   });
 
   it('shows "Waiting for controller" message when hasFailover is true', () => {
     spectator.setInput('hasFailover', true);
 
-    expect(spectator.fixture.nativeElement).toHaveText('Waiting for Active TrueNAS controller to come up...');
+    expect(spectator.fixture.nativeElement).toHaveText('Waiting for Active OneNAS controller to come up...');
   });
 });

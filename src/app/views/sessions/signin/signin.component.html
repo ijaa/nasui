@@ -11,14 +11,14 @@
           <div class="text-center logo-wrapper">
             <img
               class="logo-bg"
-              alt="Logo image background of stars and sky at night"
+              alt="Logo image background"
               src="assets/images/stars-sky-1200w.jpg"
               srcset="assets/images/stars-sky-400w.jpg, assets/images/stars-sky-800w.jpg  2x, assets/images/stars-sky-1200w.jpg 3x"
             />
             <mat-icon
               class="logo"
               svgIcon="ix:truenas_scale_logo_full"
-              alt="TrueNAS SCALE logo"
+              alt="OneNAS SCALE logo"
             ></mat-icon>
           </div>
 
@@ -241,7 +241,7 @@
             </span>
 
             <ix-true-command-status></ix-true-command-status>
-            <ix-copyright-line class="copyright" [withIxLogo]="true"></ix-copyright-line>
+            <!-- <ix-copyright-line class="copyright" [withIxLogo]="true"></ix-copyright-line> -->
           </div>
         </div>
         <div *ngIf="!connected() || !isLogoReady" class="disconnected">

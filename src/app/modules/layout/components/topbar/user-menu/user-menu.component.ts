@@ -24,9 +24,9 @@ export class UserMenuComponent {
     this.dialog.open(ChangePasswordDialogComponent);
   }
 
-  onShowAbout(): void {
-    this.dialog.open(AboutDialogComponent, {
-      disableClose: true,
-    });
-  }
+  // onShowAbout(): void {
+  //   this.dialog.open(AboutDialogComponent, {
+  //     disableClose: true,
+  //   });
+  // }
 }
