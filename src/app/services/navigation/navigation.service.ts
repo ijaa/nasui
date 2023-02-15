@@ -65,10 +65,10 @@ export class NavigationService {
       state: 'network',
     },
     {
-      name: T('Credentials'),
+      name: T('Users'),
       type: MenuItemType.SlideOut,
-      tooltip: T('Credentials'),
-      icon: 'vpn_key',
+      tooltip: T('Users'),
+      icon: 'people',
       state: 'credentials',
       sub: [
         { name: T('Local Users'), state: 'users' },
@@ -113,9 +113,9 @@ export class NavigationService {
     //   ],
     // },
     {
-      name: T('Reporting'),
+      name: T('Monitor'),
       type: MenuItemType.Link,
-      tooltip: T('Reports'),
+      tooltip: T('Monitor'),
       icon: 'insert_chart',
       state: 'reportsdashboard',
     },
@@ -126,17 +126,17 @@ export class NavigationService {
       icon: 'settings',
       state: 'system',
       sub: [
-        { name: T('Update'), state: 'update' },
+        // { name: T('Update'), state: 'update' },
         { name: T('General'), state: 'general' },
         { name: T('Advanced'), state: 'advanced' },
-        { name: T('Boot'), state: 'boot' },
+        // { name: T('Boot'), state: 'boot' },
         {
           name: T('Failover'),
           state: 'failover',
           isVisible$: this.hasFailover$,
         },
         { name: T('Services'), state: 'services' },
-        { name: T('Shell'), state: 'shell' },
+        // { name: T('Shell'), state: 'shell' },
         {
           name: T('Enclosure'),
           state: 'viewenclosure',

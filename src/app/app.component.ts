@@ -24,7 +24,7 @@ export class AppComponent {
     this.authService.isAuthenticated$.pipe(untilDestroyed(this)).subscribe((isAuthenticated) => {
       this.isAuthenticated = isAuthenticated;
     });
-    this.title.setTitle('TrueNAS - ' + this.window.location.hostname);
+    this.title.setTitle('OneNAS - ' + this.window.location.hostname);
     const darkScheme = this.window.matchMedia('(prefers-color-scheme: dark)').matches;
     let path;
     const savedProductType = this.window.localStorage.product_type as string;

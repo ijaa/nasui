@@ -1,8 +1,8 @@
-<ng-template #pageHeader>
+<!-- <ng-template #pageHeader>
   <ix-page-title-header>
     <ix-manage-configuration-menu></ix-manage-configuration-menu>
   </ix-page-title-header>
-</ng-template>
+</ng-template> -->
 
 <div
   class="wrapper"
@@ -11,17 +11,17 @@
   gdColumns="50% auto"
   gdColumns.lt-lg="50% auto "
   gdColumns.lt-md="auto"
-  gdAreas="system-card data-card1 | system-card data-card1 | data-card2 ntp-card"
-  gdAreas.lt-lg="system-card system-card | data-card1 data-card2 | ntp-card ntp-card"
-  gdAreas.lt-md="system-card | data-card1 | data-card2 | ntp-card"
+  gdAreas="data-card1 data-card2 | data-card1 data-card2"
+  gdAreas.lt-lg="data-card1 data-card2"
+  gdAreas.lt-md="data-card1 | data-card2"
 >
-  <mat-card class="system-card" gdArea="system-card">
+  <!-- <mat-card class="system-card" gdArea="system-card">
     <mat-toolbar-row class="title-bar">
       <h3>{{ supportTitle | translate }}</h3>
     </mat-toolbar-row>
 
     <ix-support></ix-support>
-  </mat-card>
+  </mat-card> -->
 
   <mat-card
     *ngFor="let card of dataCards; index as i"
@@ -47,5 +47,5 @@
     </mat-card-content>
   </mat-card>
 
-  <ix-ntp-server-list gdArea="ntp-card"></ix-ntp-server-list>
+  <!-- <ix-ntp-server-list gdArea="ntp-card"></ix-ntp-server-list> -->
 </div>

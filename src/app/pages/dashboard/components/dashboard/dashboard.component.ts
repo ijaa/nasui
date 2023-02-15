@@ -341,7 +341,7 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
 
   generateDefaultConfig(): DashConfigItem[] {
     const conf: DashConfigItem[] = [
-      { name: 'System Information', rendered: true, id: '0' },
+      { name: 'System Information', rendered: false, id: '0' },
     ];
 
     if (this.isHaLicensed) {
@@ -349,11 +349,11 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
         id: conf.length.toString(),
         name: 'System Information(Standby)',
         identifier: 'passive,true',
-        rendered: true,
+        rendered: false,
       });
     }
 
-    conf.push({ name: 'Help', rendered: true });
+    conf.push({ name: 'Help', rendered: false });
     conf.push({ name: 'CPU', rendered: true, id: conf.length.toString() });
     conf.push({ name: 'Memory', rendered: true, id: conf.length.toString() });
     conf.push({ name: 'Storage', rendered: true, id: conf.length.toString() });
